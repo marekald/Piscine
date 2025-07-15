@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:07:02 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/12 16:16:33 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/15 18:54:37 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 	*div = a / b;
 	*mod = a % b;
 }
+
 /* #include <stdio.h>
 int	main(void)
 {

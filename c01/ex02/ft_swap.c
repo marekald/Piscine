@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 15:42:35 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/12 16:05:23 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/15 18:54:44 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void	ft_swap(int *a,	int *b)
 	*a = *b;
 	*b = temp;
 }
+
 /* #include <stdio.h>
 int	main(void)
 {

@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:24:36 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/12 16:31:21 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/15 18:52:48 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ void	ft_putstr(char *str)
 /* int	main(void)
 {
 	char *str = "\nEste es un string de prueba.\n\n";
-	
+
 	ft_putstr(str);
 } */

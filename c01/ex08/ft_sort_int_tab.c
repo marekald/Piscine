@@ -5,14 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/14 17:59:16 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/14 18:39:51 by marekald         ###   ########.fr       */
+/*   Created: 2025/07/15 18:55:51 by marekald          #+#    #+#             */
+/*   Updated: 2025/07/15 18:55:53 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-void ft_sort_int_tab(int *tab, int size)
+void	ft_sort_int_tab(int *tab, int size)
 {
 	int	temp;
 	int	i;
@@ -32,16 +30,28 @@ void ft_sort_int_tab(int *tab, int size)
 	}
 }
 
+/* #include <stdio.h>
 int	main(void)
 {
-	int arr[] = {2, 1, 5, 3, 4};
+	int arr[] = {2, -44, 55, 3, 1};
 	int	size = 5;
 	int	i = 0;
 
-	ft_sort_int_tab(arr, 3);
+	printf("\nPre ft_sort_int_tab ");
 	while (size > i)
 	{
 		printf("%d ", arr[i]);
 		i++;
 	}
-}
+	printf("\n(ง •̀_•́)ง\n");
+	printf("\nPos ft_sort_int_tab ");
+	i = 0;
+	ft_sort_int_tab(arr, size);
+	while (size > i)
+	{
+		printf("%d ", arr[i]);
+		i++;
+	}
+	printf("\n");
+	printf("\n");
+} */
