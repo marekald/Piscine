@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/* Nos falta comprobar mil cosas, gestionamos que no se repitan en
+columnas y filas, pero no tenemos en cuenta las perspectivas para la solución.
+
 int	ft_row_col_valid(char **matrix, char height, int row, int col)
 {
 	int i;
@@ -35,17 +38,22 @@ int	ft_row_col_valid(char **matrix, char height, int row, int col)
 	return (0);
 }
 
-int	ft_is_valid()
+int	ft_is_valid(char **matrix, int row, int col, int size)
 {
-	if (matrix[row][col] >= 1 && matrix[row][col] <= size)
+	if (matrix[row][col] <= size)
+		return (2);
+	else
+		return (ft_row_col_valid(matrix, matrix[row][col], row, col));
 }
 
-ft_solve(char **matrix, int size, int row, int col)
+int	ft_solve(char **matrix, int size, int row, int col)
 {
 	int valid;
 
-	valid = ft_row_col_valid(matrix, matrix[row][col], row, col);
-	if (valid == 1) // es decir, numero encontrado en otra columna o fila.
+	valid = ft_is_valid(matrix, row, col, size);
+	if (valid == 2)
+		return (1);
+	else if (valid == 1) // es decir, numero encontrado en otra columna o fila.
 	{
 		matrix[row][col] = matrix[row][col] + 1;
 		ft_solve(matrix, size, row, col);
@@ -60,4 +68,5 @@ ft_solve(char **matrix, int size, int row, int col)
 	{
 
 	}
-}
+	return (0);
+} */

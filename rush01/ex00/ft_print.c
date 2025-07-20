@@ -17,3 +17,43 @@ int	ft_error(void)
 	write(2, "ERROR\n", 6);
 	return (1);
 }
+
+void	ft_print_matrix(char **matrix, int size)
+{
+	int	row;
+	int	col;
+
+	row = 1;
+	col = 1;
+	while (row < size - 1)
+	{
+		while (col < size - 1)
+		{
+			write(1, &matrix[row][col], 1);
+			col++;
+		}
+		write(1, "\n", 1);
+		col = 1;
+		row++;
+	}
+}
+
+/* void	ft_print_all(char **matrix, int size)
+{
+	int	row;
+	int	col;
+
+	row = 0;
+	col = 0;
+	while (row < size)
+	{
+		while (col < size)
+		{
+			write(1, &matrix[row][col], 1);
+			col++;
+		}
+		write(1, "\n", 1);
+		col = 0;
+		row++;
+	}
+} */

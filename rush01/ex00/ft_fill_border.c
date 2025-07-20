@@ -55,7 +55,7 @@ void	ft_fill_border(int length, int size, char *str, char **matrix)
 		}
 		else if (row < size - 1 && row != 0)
 		{
-			matrix[row][row] = str[i];
+			matrix[row][col] = str[i];
 			row++;
 			i = i + 2;
 		}

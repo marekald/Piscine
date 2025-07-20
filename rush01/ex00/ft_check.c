@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 void	ft_get_size(int *size, int len)
 {
 	int	j;
@@ -19,14 +17,9 @@ void	ft_get_size(int *size, int len)
 	j = 0;
 	while (j < 10)
 	{
-		if (j * j == (len + 1) / 2)
+		if (j * 4 == (len + 1) / 2)
 		{
 			*size = j;
-			break ;
-		}
-		else if ((len + 1) / 2 == 2)
-		{
-			*size = 1;
 			break ;
 		}
 		j++;
@@ -47,7 +40,7 @@ int	ft_check_str(char *str, int *size)
 		len++;
 	}
 	ft_get_size(size, len);
-	if ((len != *size * *size * 2 - 1) && (*size != 1))
+	if ((len != *size * 4 * 2 - 1) && (*size != 1))
 		return (1);
 	return (len);
 }
@@ -69,8 +62,6 @@ int	ft_verify_col(int size, char **matrix, int row, int col)
 	}
 	if (c1 > 1 || c2 > 1)
 		return (1);
-	c1 = 0;
-	c2 = 0;
 	return (0);
 }
 
