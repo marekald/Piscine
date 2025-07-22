@@ -33,20 +33,20 @@ void	ft_putstr_non_printable(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] < 32 || str[i] == 127)
+		if (str[i] >= 32 || str[i] < 127)
+			ft_putchar(str[i]);	
+		else
 		{
 			ft_putchar('\\');
 			ft_put_hex(str[i]);
 		}
-		else
-			ft_putchar(str[i]);
 		i++;
 	}
 }
 
 /* int	main(void)
 {
-	char	str[] = "On\nMelancholy\tHill";
+	char	str[] = "Hello\nHow are you?";
 
 	ft_putstr_non_printable(str);
 } */
