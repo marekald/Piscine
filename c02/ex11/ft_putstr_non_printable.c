@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 21:15:34 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/17 21:45:35 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/18 21:47:13 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 
 void	ft_put_hex(char c)
 {
-	char *hex;
+	char	*hex;
 
 	hex = "0123456789abcdef";
 	ft_putchar(hex[c / 16]);
@@ -29,11 +29,11 @@ void	ft_put_hex(char c)
 void	ft_putstr_non_printable(char *str)
 {
 	int	i;
-	
+
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] < 32 || str[i] > 126)
+		if (str[i] < 32 || str[i] == 127)
 		{
 			ft_putchar('\\');
 			ft_put_hex(str[i]);
@@ -44,8 +44,9 @@ void	ft_putstr_non_printable(char *str)
 	}
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char	str[] = "On\nMelancholy\tHill";
+
 	ft_putstr_non_printable(str);
-}
+} */

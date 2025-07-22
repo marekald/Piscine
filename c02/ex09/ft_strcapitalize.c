@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 20:26:43 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/17 21:34:21 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/18 20:12:18 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strlowcase(char *str)
 	return (str);
 }
 
-char	*ft_strupcase(char *str)
+char	*ft_strcapitalize(char *str)
 {
 	int	i;
 	int	j;

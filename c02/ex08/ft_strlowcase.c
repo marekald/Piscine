@@ -6,11 +6,11 @@
 /*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 20:24:50 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/16 20:26:15 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/18 14:27:29 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strlowcase(char *str)
+char	*ft_strlowcase(char *str)
 {
 	int	i;
 

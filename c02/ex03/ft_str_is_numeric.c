@@ -6,11 +6,11 @@
 /*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 15:43:24 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/16 19:30:22 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/18 14:26:51 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_str_is_numeric(char *str)
+int	ft_str_is_numeric(char *str)
 {
 	int	i;
 

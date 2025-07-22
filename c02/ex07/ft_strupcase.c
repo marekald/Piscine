@@ -6,11 +6,11 @@
 /*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 20:11:02 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/16 20:24:21 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/18 14:27:17 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strupcase(char *str)
+char	*ft_strupcase(char *str)
 {
 	int	i;
 

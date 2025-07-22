@@ -6,11 +6,11 @@
 /*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 19:39:14 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/16 19:53:50 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/18 14:27:11 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_str_is_printable(char *str)
+int	ft_str_is_printable(char *str)
 {
 	int	i;
 
