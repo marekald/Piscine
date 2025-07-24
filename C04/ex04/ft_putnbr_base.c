@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 20:51:22 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/24 10:53:14 by codespace        ###   ########.fr       */
+/*   Updated: 2025/07/24 11:30:56 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
