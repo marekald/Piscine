@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 19:51:17 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/23 20:50:17 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/24 10:51:46 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ int	ft_atoi(char *str)
 	}
 	return (num * neg);
 }
-
 
 /* #include <stdio.h>
 int	main(void)
