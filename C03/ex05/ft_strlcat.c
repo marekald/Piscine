@@ -22,30 +22,26 @@ unsigned int	ft_strlen(char *str)
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	int				i;
-	unsigned int	j;
-	unsigned int	sum;
+	unsigned int	i;
+	unsigned int	len;
 	unsigned int	dest_len;
 	unsigned int	src_len;
+	unsigned int	max;
 
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
-	if (dest_len < size)
-		sum = src_len + dest_len;
-	else
-		sum = src_len + size;
+	len = dest_len + src_len;
+	if (dest_len >= size)
+		return (size + src_len);
 	i = 0;
-	j = 0;
-	while (dest[i] != '\0')
-		i++;
-	while (src[j] != '\0' && j < size)
+	max = size - dest_len - 1;
+	while (src[i] != '\0' && i < max)
 	{
-		dest[i] = src[j];
-		j++;
+		dest[dest_len + i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
-	return (sum);
+	dest[dest_len + i] = '\0';
+	return (len);
 }
 
 /* #include <stdio.h>
@@ -54,7 +50,7 @@ int	main(void)
 {
 	char	src[] = " The Breeze";
 	char	dest[] = "Call Me";
-	int		i = ft_strlcat(dest, src, 11);
+	int		i = ft_strlcat(dest, src, 5);
 
 	printf("ft_strlcat: %i %s", i, dest);
 } */
