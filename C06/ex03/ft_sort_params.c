@@ -6,7 +6,7 @@
 /*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 23:12:42 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/31 14:59:59 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/31 15:16:31 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_print(int argc, char **argv)
 		while (argv[i][j] != '\0')
 		{
 			write(1, &argv[i][j], 1);
-			j++;	
+			j++;
 		}
 		write(1, "\n", 1);
 		i++;
@@ -45,8 +45,8 @@ int	ft_strcmp(char *s1, char *s2)
 
 int	main(int argc, char **argv)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 	char	*tmp;
 
 	i = 1;
