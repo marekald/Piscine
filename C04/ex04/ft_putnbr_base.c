@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marekald <marekald@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: marekald <marekald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 20:51:22 by marekald          #+#    #+#             */
-/*   Updated: 2025/07/24 11:30:56 by marekald         ###   ########.fr       */
+/*   Updated: 2025/07/24 16:59:22 by marekald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,5 @@ void	ft_putnbr_base(int nbr, char *base)
 	ft_putnbr_base(12345, "01");
 	write(1, "\nNo base: ", 11);
 	ft_putnbr_base(12345, "");
-	write(1, "\nBase mal: ", 12);
-	ft_putnbr_base(12345, "asdfg");
 	write(1, "\n", 1);
 } */

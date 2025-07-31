@@ -16,7 +16,7 @@ int	ft_neg(char *str, int *neg)
 
 	i = 0;
 	*neg = 1;
-	while (str[i] != '\0' && str[i] == ' ')
+	while (str[i] != '\0' && (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13)))
 		i++;
 	while (str[i] != '\0' && (str[i] == '-' || str[i] == '+'))
 	{
@@ -53,5 +53,5 @@ int	ft_atoi(char *str)
 /* #include <stdio.h>
 int	main(void)
 {
-	printf("ft_atoi: %i\n", ft_atoi("  -+--54d3 21 "));
+	printf("ft_atoi: %i\n", ft_atoi("\t  \t--+-132a5632"));
 } */

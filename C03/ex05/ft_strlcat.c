@@ -44,13 +44,13 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	return (len);
 }
 
-/* #include <stdio.h>
+#include <stdio.h>
 #include <string.h>
 int	main(void)
 {
 	char	src[] = " The Breeze";
 	char	dest[] = "Call Me";
-	int		i = ft_strlcat(dest, src, 5);
+	int		i = ft_strlcat(dest, src, 8);
 
 	printf("ft_strlcat: %i %s", i, dest);
-} */
+}
